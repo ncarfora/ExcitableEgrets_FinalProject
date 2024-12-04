@@ -30,7 +30,7 @@
 
             <asp:Button ID="btnViewProblem" runat="server" Text="View Problem" OnClick="btnViewProblem_Click" />
             <br />
-            <asp:TextBox ID="tbProblemDesription" runat="server" Height="44px" Width="929px"></asp:TextBox>
+            <asp:TextBox ID="tbProblemDesription" runat="server" Height="44px" Width="929px" TextMode="MultiLine" Wrap="true"></asp:TextBox>
             <br />
             <asp:Label ID="lbSolution" runat="server" Text="The solution is:"></asp:Label>
             <asp:TextBox ID="tbSolutionValue" runat="server"></asp:TextBox>

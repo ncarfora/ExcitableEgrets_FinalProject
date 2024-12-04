@@ -28,7 +28,9 @@ namespace ExcitableEgrets_FinalProject
         protected void btnViewProblem_Click(object sender, EventArgs e)
         {
             if (ddlProblems.SelectedValue == "Problem 233")
-            { tbProblemDesription.Text = "Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n. For this example, n will equal 13.";
+            { tbProblemDesription.Text = "Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n. A test case in Leetcode ran such that Input: n = 13, Output: 6." +
+                    " The constraints are: 0 <= n <= 10^9"+
+                    " For this example, n will equal 13.";
                 Problem233Solution problem233 = new Problem233Solution();
                 int n = 13;
                 int result = problem233.CountDigitOne(n);
