@@ -6,7 +6,7 @@
 # Course: IS 3050
 # Semester/Year: Fall 2024
 # Brief Description: This project uses asp.net to solves problems from LeetCode to show understanding of asp.net web forms and classes. 
-# Citations: ChatGPT
+# Citations: ChatGPT (chatgpt.com), LeetCode (leetcode.com)
 # Anything else that's relevant:
 */
 using System;
