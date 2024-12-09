@@ -1,6 +1,6 @@
 ﻿<!---
 # Name: Excitable Egrets
-# email: carfornc@mail.uc.edu, phanpv@mail.uc.edu
+# email: carfornc@mail.uc.edu, phanpv@mail.uc.edu, beckerd8@mail.uc.edu
 # Assignment Title: Final Project
 # Due Date: 12/10/2024
 # Course: IS 3050
@@ -28,6 +28,7 @@
                 <asp:ListItem>Problem 233</asp:ListItem>
                 <asp:ListItem>Problem 466</asp:ListItem>
                 <asp:ListItem>Problem 135</asp:ListItem>
+                <asp:ListItem>Problem 51</asp:ListItem>
             </asp:DropDownList>
 
             <asp:Button ID="btnViewProblem" runat="server" Text="View Problem" OnClick="btnViewProblem_Click" />
@@ -35,7 +36,7 @@
             <asp:TextBox ID="tbProblemDesription" runat="server" Height="44px" Width="929px" TextMode="MultiLine" Wrap="true"></asp:TextBox>
             <br />
             <asp:Label ID="lbSolution" runat="server" Text="The solution is:"></asp:Label>
-            <asp:TextBox ID="tbSolutionValue" runat="server"></asp:TextBox>
+            <asp:TextBox ID="tbSolutionValue" runat="server" Width="730px"></asp:TextBox>
         </div>
     </form>
 </body>

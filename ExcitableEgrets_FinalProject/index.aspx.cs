@@ -1,6 +1,6 @@
 ﻿/*
 # Name: Excitable Egrets
-# email: carfornc@mail.uc.edu, phanpv@mail.uc.edu
+# email: carfornc@mail.uc.edu, phanpv@mail.uc.edu, beckerd8@mail.uc.edu
 # Assignment Title: Final Project
 # Due Date: 12/10/2024
 # Course: IS 3050
@@ -71,6 +71,22 @@ namespace ExcitableEgrets_FinalProject
                 tbSolutionValue.Text = result.ToString();
             }
 
+            if (ddlProblems.SelectedValue == "Problem 51")
+            {
+                tbProblemDesription.Text = "The N-Queens puzzle is the problem of placing n queens on an n x n chessboard " +
+                    "such that no two queens attack each other. Return all distinct solutions for a given n. " +
+                    "For this example, n = 4.";
+
+                int n = 4; // Example input
+                NQueens nQueens = new NQueens();
+                List<List<string>> solutions = nQueens.SolveNQueens(n);
+
+                // Format the solutions with row numbers for better readability
+                tbSolutionValue.Text = string.Join(
+                    " | ", // Separate solutions with " | "
+                    solutions.Select(solution => string.Join(" ", solution.Select((row, index) => $"{index + 1}:{row}"))) // Add row numbers
+                );
+            }
 
             if (ddlProblems.SelectedValue == "Problem X")
             { tbProblemDesription.Text = ""; }
