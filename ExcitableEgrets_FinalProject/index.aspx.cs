@@ -52,13 +52,35 @@ namespace ExcitableEgrets_FinalProject
                 tbSolutionValue.Text = result.ToString();
             }
 
-            if (ddlProblems.SelectedValue == "Problem X")
-            { tbProblemDesription.Text = ""; }
+            if (ddlProblems.SelectedValue == "Problem 135")
+            {
+                tbProblemDesription.Text = "There are n children standing in a line. " +
+                    "Each child is assigned a rating value given in the integer array ratings. You " +
+                    "are giving candies to these children subjected to the following requirements: Each child must have at least " +
+                    "one candy. Children with a higher rating get more candies than their neighbors. Return the minimum number of candies you need to " +
+                    "have to distribute the candies to the children. For this example, there are three children with ratings of 1, 0, and 2.";
+
+                // Step 1: Define the ratings
+                int[] ratings = { 1, 0, 2 };
+
+                // Step 2: Create an instance of the class that contains the Candy method
+                Problem135 problem135 = new Problem135();
+
+                // Step 3: Call the Candy method and pass the ratings
+                int result = problem135.Candy(ratings);
+                tbSolutionValue.Text = result.ToString();
+            }
+
 
             if (ddlProblems.SelectedValue == "Problem X")
             { tbProblemDesription.Text = ""; }
 
 
+
+        }
+
+        protected void tbProblemDesription_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
