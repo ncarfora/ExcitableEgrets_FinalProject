@@ -1,6 +1,6 @@
 ﻿<!---
 # Name: Excitable Egrets
-# email: carfornc@mail.uc.edu, phanpv@mail.uc.edu, beckerd8@mail.uc.edu
+# email: carfornc@mail.uc.edu, phanpv@mail.uc.edu, beckerd8@mail.uc.edu, slivinmb@mail.uc.edu
 # Assignment Title: Final Project
 # Due Date: 12/10/2024
 # Course: IS 3050
